@@ -36,3 +36,10 @@ Clone the repository and install dependencies:
 git clone https://github.com/GeekyAsif786/React-Pocket.git
 cd React-Pocket
 npm install
+
+
+<h2>Start the development server</h2>
+```bash
+npm run dev
+# or, if using create-react-app
+npm start
