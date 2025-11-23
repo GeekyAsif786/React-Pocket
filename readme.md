@@ -36,10 +36,52 @@ Clone the repository and install dependencies:
 git clone https://github.com/GeekyAsif786/React-Pocket.git
 cd React-Pocket
 npm install
+```
 
+<h4>Start the development server:</h4>
 
-<h2>Start the development server</h2>
 ```bash
+
 npm run dev
 # or, if using create-react-app
 npm start
+```
+<h4>Folder Structure:</h4>
+
+```php
+React-Pocket/
+├── PasswordGenerator/
+│   ├── Src/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   ├── index.css
+│   │   └── App.css
+│   ├── Public
+│   ├── node_modules
+├──BackgroundChanger/...
+└──Stopwatch/...
+```
+<h3>🌟 Future Plans:</h3>
+<ul>
+    <li>✅ Add more React mini-apps (e.g., Todo List, Countdown Timer, Random Quote Generator)</li>
+    <li>🔄 Improve UI consistency and accessibility</li>
+    <li>🌐 Deploy on Vercel or Netlify for live demos</li>
+    <li>💡 Possibly migrate to TypeScript</li>
+</ul>
+
+
+<h3>🧑‍💻 Contributing:</h3>
+<p>Contributions are welcome!</p>
+<p>If you have an idea for a new tool or want to improve an existing one:</p>
+<ol>
+    <li>Fork the repo</li>
+    <li>Create a branch (git checkout -b feature-new-tool)</li>
+    <li>Commit changes (git commit -m "Added new tool")</li>
+    <li>Push and create a Pull Request </li>
+</ol>
+<h3>📜 License</h3>
+<p>This project is open source and available under the MIT License</p>
+
+<h3>❤️ Acknowledgements</h3>
+
+<p>Made with React, caffeine ☕, and curiosity by @GeekyAsif786. If you like this repo, please ⭐ it — it motivates future updates!</p>
