@@ -28,7 +28,7 @@ function App() {
 
     return (
         <div
-            className="w-full h-screen flex justify-center items-center bg-cover bg-no-repeat relative"
+            className="w-full h-screen flex justify-center items-center bg-repeat relative animated-bg"
             style={{
                 backgroundImage: `url('${bgImage}')`,
             }}

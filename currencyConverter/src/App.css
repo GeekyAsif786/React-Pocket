@@ -1,0 +1,13 @@
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.animated-bg {
+  animation: moveBackground 20s linear infinite;
+  background-size: 110%;
+}
