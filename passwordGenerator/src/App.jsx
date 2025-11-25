@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import { useCallback, useEffect, useRef } from 'react';
 
+import passwordBg from './assets/password_bg.png'
+
 function App() {
   const [length, setLength] = useState(8);
   const [numberAllowed, setNumberAllowed] = useState(false);
@@ -9,7 +11,6 @@ function App() {
   const [password, setPassword] = useState("")
   const [showToast, setShowToast] = useState(false)
 
-  //useRef hook
   const passwordRef = useRef(null)
 
   const passwordGenerator = useCallback(() => {
@@ -43,8 +44,12 @@ function App() {
 
   useEffect(() => { passwordGenerator() }, [length, numberAllowed, charAllowed, passwordGenerator])
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-gray-900">
-      <div className="w-full max-w-md mx-auto shadow-2xl rounded-2xl px-8 py-8 text-orange-500 bg-gray-800 border border-gray-700">
+    <div
+      className="w-full h-screen flex justify-center items-center bg-cover bg-center bg-no-repeat relative"
+      style={{ backgroundImage: `url(${passwordBg})` }}
+    >
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+      <div className="w-full max-w-md mx-auto shadow-2xl rounded-2xl px-8 py-8 text-orange-500 bg-gray-800/80 border border-gray-700 relative z-10 backdrop-blur-md">
         <h1 className="text-3xl font-bold text-white text-center mb-8">Password Generator</h1>
 
         <div className="flex shadow-lg rounded-xl overflow-hidden mb-6 border border-gray-600">
@@ -106,7 +111,6 @@ function App() {
           </div>
         </div>
       </div>
-      {/* Toast Notification */}
       {showToast && (
         <div className="fixed top-10 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-lg shadow-xl animate-bounce transition-all duration-300 flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
